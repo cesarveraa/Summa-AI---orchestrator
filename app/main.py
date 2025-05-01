@@ -7,8 +7,9 @@ from openai import AsyncOpenAI
 
 # Cargar variables de entorno
 load_dotenv()
-AI_API_KEY = os.getenv("AI_ML_API_KEY")
-AI_API_URL = os.getenv("AI_ML_API_URL")
+# Variables de entorno embebidas directamente
+AI_API_KEY = "4fcecffe5a3549359895f2f0b920b009"
+AI_API_URL = "https://api.aimlapi.com/v1"
 
 if not AI_API_KEY or not AI_API_URL:
     raise RuntimeError("Faltan variables de entorno AI_ML_API_KEY o AI_ML_API_URL")
