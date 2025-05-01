@@ -1,0 +1,21 @@
+
+
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app/main.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/ws/orchestrator",
+        "dest": "app/main.py"
+      }
+    ]
+  }
+  
